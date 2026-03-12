@@ -29,6 +29,6 @@ public class PosServiceTest {
         when(posDataService.getAll()).thenReturn(testFixtures);
 
         List<Pos> retrievedPos = posService.getAll();
-        assertEquals(3, retrievedPos.size());
+        assertEquals(testFixtures.size(), retrievedPos.size());
     }
 }
